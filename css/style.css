@@ -230,12 +230,13 @@ header {
     float: right;
     padding: 0.8em 1em;
     margin-right: 5px;
+    margin-bottom: 5px;
     background: #acb7c0;
     color: #ffffff;
     border-radius: 0.25em;
     display: inline-block;
-    font-size: 5px;
-    font-size: 0.3125rem; }
+    font-size: 10px;
+    font-size: 0.625rem; }
     .cd-timeline-content .cd-tag.lower {
       display: none; }
     .no-touch .cd-timeline-content .cd-tag:hover {

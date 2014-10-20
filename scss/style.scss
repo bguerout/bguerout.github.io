@@ -269,11 +269,12 @@ header {
     float: right;
     padding: .8em 1em;
     margin-right: 5px;
+    margin-bottom: 5px;
     background: $link;
     color: $color-3;
     @include border-radius;
     display: inline-block;
-    @include font-size(5px);
+    @include font-size(10px);
 
     &.lower {
       display: none;
