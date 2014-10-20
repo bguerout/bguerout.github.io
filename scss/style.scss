@@ -76,8 +76,8 @@ Main components
 -------------------------------- */
 
 header {
-  height: 200px;
-  line-height: 200px;
+  height: 40px;
+  line-height: 35px;
   text-align: center;
   background: $color-1;
 
@@ -87,8 +87,8 @@ header {
   }
 
   @include MQ(L) {
-    height: 300px;
-    line-height: 300px;
+    height: 40px;
+    line-height: 35px;
 
     h1 {
       @include font-size(24px);
@@ -173,11 +173,20 @@ header {
     margin-left: -12px;
     margin-top: -12px;
   }
-  &.cd-vsc {
+
+  &.cd-me {
+    background: $color-6;
+  }
+
+  &.cd-vsc, &.cd-mappy {
     background: $color-3;
   }
 
-  &.cd-picture {
+  &.cd-interventions {
+    background: $color-7;
+  }
+
+  &.cd-jongo {
     background: $color-4;
   }
 
@@ -239,20 +248,8 @@ header {
     color: $color-1;
   }
 
-  p, .cd-read-more, .cd-date {
+  p, ul {
     @include font-size(13px);
-  }
-
-  ul {
-    li {
-      line-height: 1.6;
-      margin: 1em 1.5em;
-      list-style: circle;
-    }
-  }
-
-  .cd-read-more, .cd-date {
-    display: inline-block;
   }
 
   p {
@@ -260,12 +257,27 @@ header {
     line-height: 1.6;
   }
 
+  ul {
+    li {
+      margin: 1em 1.5em;
+      line-height: 1.6;
+      list-style: circle;
+    }
+  }
+
   .cd-read-more {
     float: right;
     padding: .8em 1em;
+    margin-right: 5px;
     background: $link;
     color: $color-3;
     @include border-radius;
+    display: inline-block;
+    @include font-size(5px);
+
+    &.lower {
+      display: none;
+    }
 
     .no-touch &:hover {
       background-color: lighten($link, 5%);
@@ -273,6 +285,7 @@ header {
   }
 
   .cd-date {
+    @include font-size(5px);
     float: left;
     padding: .8em 0;
     opacity: .7;
@@ -294,12 +307,15 @@ header {
       @include font-size(20px);
     }
 
-    p {
+    p, ul {
       @include font-size(16px);
     }
 
     .cd-read-more, .cd-date {
       @include font-size(14px);
+      &.lower {
+        display: inherit;
+      }
     }
   }
 
@@ -307,6 +323,14 @@ header {
     margin-left: 0;
     padding: 1.6em;
     width: 45%;
+
+    &.intro {
+      width: 100%;
+
+      &::before {
+        left: 0%;
+      }
+    }
 
     &::before {
       top: 24px;
@@ -317,6 +341,10 @@ header {
 
     .cd-read-more {
       float: left;
+
+      &.lower {
+        display: inherit;
+      }
     }
 
     .cd-date {
