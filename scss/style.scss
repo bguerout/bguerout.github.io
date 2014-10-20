@@ -178,7 +178,7 @@ header {
     background: $color-6;
   }
 
-  &.cd-vsc, &.cd-mappy {
+  &.cd-vsc, &.cd-mappy, &.cd-basic {
     background: $color-3;
   }
 
@@ -265,7 +265,7 @@ header {
     }
   }
 
-  .cd-read-more {
+  .cd-tag {
     float: right;
     padding: .8em 1em;
     margin-right: 5px;
@@ -311,7 +311,7 @@ header {
       @include font-size(16px);
     }
 
-    .cd-read-more, .cd-date {
+    .cd-tag, .cd-date {
       @include font-size(14px);
       &.lower {
         display: inherit;
@@ -339,7 +339,7 @@ header {
       border-left-color: $color-3;
     }
 
-    .cd-read-more {
+    .cd-tag {
       float: left;
 
       &.lower {
@@ -366,7 +366,7 @@ header {
         border-right-color: $color-3;
       }
 
-      .cd-read-more {
+      .cd-tag {
         float: right;
       }
 

@@ -128,7 +128,7 @@ header {
     margin-top: -12px; }
   .cd-timeline-img.cd-me {
     background: #000000; }
-  .cd-timeline-img.cd-vsc, .cd-timeline-img.cd-mappy {
+  .cd-timeline-img.cd-vsc, .cd-timeline-img.cd-mappy, .cd-timeline-img.cd-basic {
     background: #ffffff; }
   .cd-timeline-img.cd-interventions {
     background: #7EACCE; }
@@ -226,7 +226,7 @@ header {
     margin: 1em 1.5em;
     line-height: 1.6;
     list-style: circle; }
-  .cd-timeline-content .cd-read-more {
+  .cd-timeline-content .cd-tag {
     float: right;
     padding: 0.8em 1em;
     margin-right: 5px;
@@ -236,9 +236,9 @@ header {
     display: inline-block;
     font-size: 5px;
     font-size: 0.3125rem; }
-    .cd-timeline-content .cd-read-more.lower {
+    .cd-timeline-content .cd-tag.lower {
       display: none; }
-    .no-touch .cd-timeline-content .cd-read-more:hover {
+    .no-touch .cd-timeline-content .cd-tag:hover {
       background-color: #bac4cb; }
   .cd-timeline-content .cd-date {
     font-size: 5px;
@@ -264,10 +264,10 @@ header {
       font-size: 16px;
       font-size: 1rem; }
 
-    .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    .cd-timeline-content .cd-tag, .cd-timeline-content .cd-date {
       font-size: 14px;
       font-size: 0.875rem; }
-      .cd-timeline-content .cd-read-more.lower, .cd-timeline-content .cd-date.lower {
+      .cd-timeline-content .cd-tag.lower, .cd-timeline-content .cd-date.lower {
         display: inherit; }
  }
   @media only screen and (min-width: 1170px) {
@@ -284,9 +284,9 @@ header {
         left: 100%;
         border-color: transparent;
         border-left-color: #ffffff; }
-      .cd-timeline-content .cd-read-more {
+      .cd-timeline-content .cd-tag {
         float: left; }
-        .cd-timeline-content .cd-read-more.lower {
+        .cd-timeline-content .cd-tag.lower {
           display: inherit; }
       .cd-timeline-content .cd-date {
         position: absolute;
@@ -303,7 +303,7 @@ header {
           right: 100%;
           border-color: transparent;
           border-right-color: #ffffff; }
-        .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+        .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-tag {
           float: right; }
         .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
           left: auto;
