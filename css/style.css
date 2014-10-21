@@ -237,13 +237,12 @@ header {
     display: inline-block;
     font-size: 10px;
     font-size: 0.625rem; }
-    .cd-timeline-content .cd-tag.lower {
-      display: none; }
     .no-touch .cd-timeline-content .cd-tag:hover {
       background-color: #bac4cb; }
   .cd-timeline-content .cd-date {
-    font-size: 5px;
-    font-size: 0.3125rem;
+    font-size: 10px;
+    font-size: 0.625rem;
+    width: 100%;
     float: left;
     padding: 0.8em 0;
     opacity: 0.7; }
@@ -268,32 +267,26 @@ header {
     .cd-timeline-content .cd-tag, .cd-timeline-content .cd-date {
       font-size: 14px;
       font-size: 0.875rem; }
-      .cd-timeline-content .cd-tag.lower, .cd-timeline-content .cd-date.lower {
-        display: inherit; }
+
+    .cd-timeline-content .cd-date {
+      width: inherit; }
  }
   @media only screen and (min-width: 1170px) {
     .cd-timeline-content {
       margin-left: 0;
       padding: 1.6em;
       width: 45%; }
-      .cd-timeline-content.intro {
-        width: 100%; }
-        .cd-timeline-content.intro::before {
-          left: 0%; }
       .cd-timeline-content::before {
         top: 24px;
         left: 100%;
         border-color: transparent;
         border-left-color: #ffffff; }
-      .cd-timeline-content .cd-tag {
-        float: left; }
-        .cd-timeline-content .cd-tag.lower {
-          display: inherit; }
       .cd-timeline-content .cd-date {
         position: absolute;
         width: 100%;
         left: 122%;
         top: 6px;
+        width: inherit;
         font-size: 16px;
         font-size: 1rem; }
       .cd-timeline-block:nth-child(even) .cd-timeline-content {
